@@ -130,13 +130,10 @@ escreva ("=== MENU PRINCIPAL ===")
 
     	}
 		senao {
-			escreva("
-Produto inválido!
-")
+			escreva("Produto inválido!")
 		}
 		
-		escreva("
-Pressione ENTER para voltar ao menu...")
+		escreva("Pressione ENTER para voltar ao menu...")
 		leia(tecla_pausa)
 		pare
 		
@@ -145,8 +142,7 @@ Pressione ENTER para voltar ao menu...")
 		// ==========================================
 		caso 2:
 			limpa()
-			escreva("--- MEU CARRINHO DE COMPRAS ---
-")
+			escreva("--- MEU CARRINHO DE COMPRAS ---")
 
  se (qtd_carrinh_prod1 == 0 e qtd_carrinh_prod2 == 0 e qtd_carrinh_prod1)
     {
@@ -168,8 +164,7 @@ Pressione ENTER para voltar ao menu...")
           escreva("- ", qtd_carrinh_prod3, "x tênis de corrida (R$ ", (qtd_carrinh_prod3))
 
            }
-  escreva("
-Pressione ENTER para voltar ao menu...")
+  escreva("Pressione ENTER para voltar ao menu...")
   leia(tecla_pausa)
   pare
 
@@ -205,9 +200,7 @@ escreva("Escolha o item para alterar a quantidade: ")
 escreva ("Quantidade atualizada com sucesso!")
          } senao {
              estoque_prod1 = estoque_prod1 - qtd_carrinho_prod1
-             escreva("
-
-               Quantidade invalida ou acima do estoque disponivel!")
+             escreva("Quantidade invalida ou acima do estoque disponivel!")
 
         }
   }
@@ -235,9 +228,7 @@ escreva ("Quantidade atualizada com sucesso!")
             se (quantidade_temp >= 0 e quantidade_temp <= estoque_prod3)  {
                 qtd_carrinho_prod3 = quantidade_temp
                 estoque_prod3 = quantidade_temp
-                escreva("
-Quantidade atualizada com sucesso!
-")
+                escreva("Quantidade atualizada com sucesso!")
             } senao {
               estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
               escreva("
